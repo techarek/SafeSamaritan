@@ -1,0 +1,251 @@
+:root {
+  --main-bg-color: white;
+  --highlight-color: #007FFF;
+  --other-highlight-color: #1da1f2;
+  --main-color: blue;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-bg-color);
+}
+
+.success-message {
+  color: green;
+  margin: auto;
+}
+
+.error-message {
+  color: red;
+  margin: auto;
+}
+
+.top-banner {
+  background-color: var(--other-highlight-color);
+  padding-left: 20px;
+  padding-right:20px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+a:visited {
+  color: var(--main-color);
+}
+
+.header {
+  color: var(--main-color);
+  text-align: center;
+}
+
+.nav-bar {
+  font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.component {
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-container > * {
+  margin: 0.5rem;
+  margin-bottom: 50px;
+}
+
+.form-container input {
+  font-size: 1.2em;
+}
+
+.short-item-actions {
+  margin: 10px 0px;
+}
+
+.primary-header {
+  font-size: 4em;
+  margin-bottom: 4%;
+}
+
+.secondary-header {
+  font-size: 3em;
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.subcontainer {
+  width: 50%;
+  margin: 5%;
+  overflow-wrap: break-word;
+}
+
+.button {
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.password-row {
+  display: grid;
+}
+
+.home-row {
+  display: flex;
+}
+
+.home-column {
+  flex: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.search-bar{
+  width: 80%;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 0px;
+  border-radius: 3px;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  margin: 3px;
+  width: 100%;
+  border-color: black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:hover {
+  background-color: black;
+  color:white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.business-box {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  color: black;
+}
+
+.business-box:hover{
+  color: rgb(53, 5, 199);
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  height: 80%;
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px 30px;
+  color: black;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: auto;
+}
+
+.modal-header{
+  margin-top: 0;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+} 
+
+.loginpage-button{
+  text-align: center;
+  display: inline-block;
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+  padding: 8px;
+}
+
+.loginpage-button:hover{
+  background-color: black;
+  color: white;
+}
